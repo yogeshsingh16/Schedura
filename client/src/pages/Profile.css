@@ -1,0 +1,79 @@
+.profile-page {
+  padding-top: calc(var(--navbar-height) + var(--space-2xl));
+  padding-bottom: var(--space-3xl);
+  min-height: 100vh;
+}
+
+.profile-header {
+  margin-bottom: var(--space-2xl);
+  animation: fadeInUp 0.5s ease;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.profile-content {
+  max-width: 560px;
+  animation: fadeInUp 0.5s ease 0.1s both;
+}
+
+.profile-card {
+  padding: var(--space-2xl);
+}
+
+.profile-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.profile-avatar-info h2 {
+  font-size: 1.35rem;
+  margin-bottom: 2px;
+}
+
+.profile-avatar-info p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.profile-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.profile-success {
+  padding: 0.75rem 1rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--radius-md);
+  color: #22c55e;
+  font-size: 0.85rem;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
