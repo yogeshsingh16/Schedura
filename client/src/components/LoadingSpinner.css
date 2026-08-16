@@ -1,0 +1,32 @@
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3xl);
+}
+
+.spinner-container.full-screen {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.spinner.sm {
+  width: 24px;
+  height: 24px;
+  border-width: 2px;
+}
+
+.spinner.lg {
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+}
