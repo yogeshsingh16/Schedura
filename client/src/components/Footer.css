@@ -1,0 +1,16 @@
+.footer {
+  margin-top: auto;
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer-brand {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
