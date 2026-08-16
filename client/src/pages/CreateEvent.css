@@ -1,0 +1,120 @@
+.create-event {
+  padding-top: calc(var(--navbar-height) + var(--space-2xl));
+  padding-bottom: var(--space-3xl);
+  min-height: 100vh;
+}
+
+.create-event-header {
+  margin-bottom: var(--space-2xl);
+  animation: fadeInUp 0.5s ease;
+}
+
+.create-event-header h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.create-event-form {
+  max-width: 720px;
+  animation: fadeInUp 0.5s ease 0.1s both;
+}
+
+.create-event-form .glass-card-static {
+  padding: var(--space-2xl);
+}
+
+.create-event-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.create-event-section:last-child {
+  margin-bottom: 0;
+}
+
+.create-event-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.create-event-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.create-event-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.create-event-virtual-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.create-event-virtual-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-primary);
+  cursor: pointer;
+}
+
+.create-event-virtual-toggle span {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.create-event-tags-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.create-event-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.3rem 0.6rem;
+  background: rgba(67, 97, 238, 0.12);
+  border-radius: var(--radius-xl);
+  font-size: 0.82rem;
+  color: var(--accent-primary);
+}
+
+.create-event-tag button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.create-event-tag button:hover {
+  color: var(--text-primary);
+}
+
+.create-event-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .create-event-row {
+    grid-template-columns: 1fr;
+  }
+}
